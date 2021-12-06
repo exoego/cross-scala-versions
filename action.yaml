@@ -1,0 +1,11 @@
+name: 'Cross Scala Versions'
+description: 'Extract Scala versions from build.sbt'
+outputs:
+  scala_versions:
+    description: 'The Scala versions. E.g.) ["2.12.5", "2.13.4"]'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'layers'
+  color: 'red'
